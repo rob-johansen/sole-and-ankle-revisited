@@ -1,3 +1,9 @@
+export const BREAKPOINTS = {
+  laptopAndBelow: '(max-width: 81.25rem)',
+  tabletAndBelow: '(max-width: 59.375rem)',
+  phoneAndBelow: '(max-width: 37.5rem)',
+}
+
 export const COLORS = {
   white: 'hsl(0deg 0% 100%)',
   gray: {
@@ -7,6 +13,7 @@ export const COLORS = {
     700: 'hsl(220deg 5% 40%)',
     900: 'hsl(220deg 3% 20%)',
   },
+  overlay: 'hsla(220deg 5% 40% / 0.8)',
   primary: 'hsl(340deg 65% 47%)',
   secondary: 'hsl(240deg 60% 63%)',
 };

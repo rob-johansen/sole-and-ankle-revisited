@@ -117,7 +117,7 @@ const Flag = styled.div`
   padding: 0 10px;
   font-size: ${14 / 18}rem;
   font-weight: ${WEIGHTS.bold};
-  color: ${COLORS.white};
+  color: var(--color-white);
   border-radius: 2px;
 `;
 

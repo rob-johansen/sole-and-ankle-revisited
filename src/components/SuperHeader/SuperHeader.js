@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS } from '../../constants';
+import { BREAKPOINTS, COLORS } from '../../constants';
 
 import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
@@ -32,10 +32,18 @@ const Wrapper = styled.div`
   height: 40px;
   padding-left: 32px;
   padding-right: 32px;
+
+  @media ${BREAKPOINTS.tabletAndBelow} {
+    height: 4px;
+    
+    & > * {
+      display: none;
+    }
+  }
 `;
 
 const MarketingMessage = styled.span`
-  color: ${COLORS.white};
+  color: var(--color-white);
   margin-right: auto;
 `;
 

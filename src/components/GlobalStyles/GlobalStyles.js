@@ -57,6 +57,22 @@ table {
   -moz-osx-font-smoothing: auto;
 }
 
+:root {
+  --color-white: hsl(0deg 0% 100%);
+  
+  --gray-hue: 220deg;
+  --gray-sl: 5% 40%;
+  --color-gray: hsl(
+    var(--gray-hue)
+    var(--gray-sl)
+  );
+  --color-modal-overlay: hsla(
+    var(--gray-hue)
+    var(--gray-sl)
+    / 0.8
+  );
+}
+
 #root {
   /*
     Create a stacking context, without a z-index.
